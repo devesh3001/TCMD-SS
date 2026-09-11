@@ -2,8 +2,8 @@
 __pycache__/
 .pytest_cache/
 outputs/
-data/
-datasets/
+/data/
+/datasets/
 
 .pytest-tmp/
 
