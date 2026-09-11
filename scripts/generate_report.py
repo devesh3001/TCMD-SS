@@ -184,9 +184,24 @@ pdf.table_row(['Calibration', '2,000', 'Subset of train'])
 pdf.table_row(['Test clean', '2,100', 'None'])
 pdf.table_row(['Test anomaly', '5,125', 'None'])
 
+# ── Qualitative Results ───────────────────────────────────────────────────
+pdf.add_page()
+pdf.section('11. Qualitative Results (NSSC Heatmaps)')
+pdf.body('These example predictions show the input image, normal counterfactual reconstruction, and the localized discrepancy heatmaps.')
+
+heatmap_dir = Path('outputs/smoke/heatmaps')
+if heatmap_dir.exists():
+    for i, img_path in enumerate(sorted(heatmap_dir.glob('example_*.png'))):
+        pdf.image(str(img_path), w=180)
+        pdf.ln(5)
+        if i == 1: # Only show up to 2 examples to avoid making PDF too long
+            break
+else:
+    pdf.body('(Heatmap images not yet generated or not found.)')
+
 # ── References ──────────────────────────────────────────────────────────────
 pdf.add_page()
-pdf.section('11. References')
+pdf.section('12. References')
 refs = [
     '1. HiRISE Anomaly Detection problem statement, pp. 1-3.',
     '2. NSSC 2026, IIT Kharagpur - Data Analytics event page.',
