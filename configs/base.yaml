@@ -1,0 +1,24 @@
+dataset:
+  root: data/raw/hirise_v3_2
+  normal_labels: []
+  anomaly_labels: []
+audit:
+  phash_distance: 4
+  output_dir: outputs
+split:
+  seed: 42
+  ratios:
+  - 0.7
+  - 0.15
+  - 0.15
+experiment:
+  normal_class_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  anomaly_labels_used: false

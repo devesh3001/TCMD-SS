@@ -1,0 +1,25 @@
+{
+  "auroc": 0.8893229166666666,
+  "auprc": 0.9851937503275228,
+  "f1": 0.7906712172923777,
+  "precision": 0.99002849002849,
+  "recall": 0.6581439393939394,
+  "specificity": 0.9453125,
+  "balanced_accuracy": 0.8017282196969697,
+  "false_positive_rate": 0.0546875,
+  "tn": 121,
+  "fp": 7,
+  "fn": 361,
+  "tp": 695,
+  "n": 1184,
+  "auroc_ci95": {
+    "lower": 0.860884074421672,
+    "upper": 0.9170008803858902,
+    "valid_replicates": 300,
+    "unit": "source base landmark",
+    "seed": 42
+  },
+  "threshold": 1.7794159070358,
+  "seconds": 1369.5052303000048,
+  "provisional": true
+}

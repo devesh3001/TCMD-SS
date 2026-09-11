@@ -1,0 +1,30 @@
+{
+  "map_method": "maximum of clean-A pixelwise robust z for pixel/texture/profile maps",
+  "map_median": [
+    0.052009426057338715,
+    0.0,
+    0.05517694354057312
+  ],
+  "map_scale": [
+    0.0522613450884819,
+    9.999999974752427e-07,
+    0.045045290142297745
+  ],
+  "pixel_threshold": 2679936.5,
+  "pixel_threshold_source": "independent clean calibration B; uniform spatial subsampling; q95",
+  "source_bootstrap": {
+    "variant": "complete_three_max",
+    "sources": 12,
+    "replicates": 200,
+    "auroc_lower": 0.5651152263374486,
+    "auroc_upper": 0.711155045351474
+  },
+  "limitations": [
+    "This is a three-channel development ablation without DINO",
+    "Full-image stripe masks have no background: pixel AUROC and ratio are undefined",
+    "Frequency profile maps are row/column attribution, not spatial inverse FFT",
+    "Geometric corruption masks, not manually annotated real faults",
+    "Small source count makes bootstrap intervals unstable"
+  ],
+  "final_evaluated": false
+}

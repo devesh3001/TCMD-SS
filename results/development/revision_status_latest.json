@@ -1,0 +1,41 @@
+{
+  "status": "partial_generative_development_completed_dino_blocked",
+  "completed": [
+    "Source/base/duplicate-linked separation preserved",
+    "Six-family .15/.30/.50 generative benchmark: 64 clean A, 64 clean B, 16 clean development and 288 corruptions",
+    "V6 GPU inference and V7 cached refinement",
+    "Normal-only image and pixel calibration",
+    "Source bootstrap and localization metrics",
+    "Rare-anomaly prevalence sensitivity without external data",
+    "14 isolated tests",
+    "Executed notebook, labelled development PDF and seven-version evolution"
+  ],
+  "remaining": [
+    "Restore authorized numerical runtime for DINO",
+    "Evaluate corresponding DINO semantic discrepancy and complete requested ablations",
+    "Larger development validation and architecture freeze",
+    "One-time final holdout evaluation",
+    "GitHub publication destination and reproducible evidence packaging"
+  ],
+  "v7": {
+    "variant": "complete_three_mean",
+    "auroc": 0.7180989583333334,
+    "auprc": 0.9792051494496941,
+    "precision": 0.9848484848484849,
+    "recall": 0.4513888888888889,
+    "f1": 0.6190476190476191,
+    "fpr": 0.125,
+    "tpr": 0.4513888888888889,
+    "tp": 130,
+    "fp": 2,
+    "tn": 14,
+    "fn": 158,
+    "median_anomaly_score": 0.6001642048358917,
+    "paired_anomaly_gt_clean": 0.7430555555555556,
+    "paired_n": 288,
+    "n": 304,
+    "threshold": 0.6986505389213562
+  },
+  "final_evaluated": false,
+  "authorship": "Project voice and defence guide added; no fabricated contributions or unaided-work assertion"
+}

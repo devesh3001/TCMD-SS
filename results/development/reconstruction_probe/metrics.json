@@ -1,0 +1,15 @@
+{
+  "purpose": "clean training-image reconstruction smoke, not anomaly performance",
+  "base_id": "esp_016715_2025_red-0050",
+  "source_id": "esp_016715_2025",
+  "seeds": [
+    42,
+    1042
+  ],
+  "sampling_steps": 15,
+  "seconds": 3.354529200000343,
+  "mean_absolute_residual": 0.06195905804634094,
+  "mean_seed_disagreement": 0.04516306519508362,
+  "finite": true,
+  "gpu_peak_mib": 36.56591796875
+}

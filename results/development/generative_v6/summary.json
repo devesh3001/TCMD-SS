@@ -1,0 +1,66 @@
+{
+  "status": "bounded_development_only",
+  "normal_calibration_a": 64,
+  "normal_calibration_b": 64,
+  "development_cases": 304,
+  "median": [
+    0.3732929229736328,
+    2.626230478286743,
+    0.783448338508606
+  ],
+  "scale": [
+    0.09998592734336853,
+    1.598505973815918,
+    0.22688600420951843
+  ],
+  "threshold_procedure": "clean A median/MAD; independent clean B q95",
+  "best_diagnostic": {
+    "variant": "pixel_mean",
+    "auroc": 0.6306423611111112,
+    "auprc": 0.9649251867536526,
+    "precision": 0.9545454545454546,
+    "recall": 0.14583333333333334,
+    "f1": 0.2530120481927711,
+    "fpr": 0.125,
+    "tpr": 0.14583333333333334,
+    "tp": 42,
+    "fp": 2,
+    "tn": 14,
+    "fn": 246,
+    "median_anomaly_score": 0.22458018362522125,
+    "paired_anomaly_gt_clean": 0.7013888888888888,
+    "paired_n": 288,
+    "n": 304,
+    "threshold": 1.7241846323013306
+  },
+  "complete_three_max": {
+    "variant": "complete_three_max",
+    "auroc": 0.6291232638888888,
+    "auprc": 0.9640648845853032,
+    "precision": 0.9464285714285714,
+    "recall": 0.1840277777777778,
+    "f1": 0.3081395348837209,
+    "fpr": 0.1875,
+    "tpr": 0.1840277777777778,
+    "tp": 53,
+    "fp": 3,
+    "tn": 13,
+    "fn": 235,
+    "median_anomaly_score": 1.071277678012848,
+    "paired_anomaly_gt_clean": 0.6631944444444444,
+    "paired_n": 288,
+    "n": 304,
+    "threshold": 3.903651475906372
+  },
+  "mean_inference_seconds": 0.3994532807870281,
+  "parameters": 570497,
+  "peak_gpu_mib": 112.81787109375,
+  "final_evaluated": false,
+  "limitations": [
+    "No DINO semantic branch: this is a partial-model ablation",
+    "Six synthetic families only; foreign content is procedural, not a downloaded dataset",
+    "16 development originals; dependent corruptions are not independent samples",
+    "No model changes or threshold fitting from anomaly labels",
+    "No architecture freeze or final evaluation"
+  ]
+}

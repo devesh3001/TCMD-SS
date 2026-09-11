@@ -1,0 +1,15 @@
+{
+  "tests_passed": 18,
+  "valid_images": 64947,
+  "split_overlap_counts": {
+    "base_id": 0,
+    "group_id": 0,
+    "source_id": 0,
+    "split_group_id": 0
+  },
+  "all_eight_classes_in_each_split": true,
+  "all_near_pairs_colocated": true,
+  "label_image_reconciliation": "complete",
+  "base_seed": 42,
+  "allocation_seed": 44
+}

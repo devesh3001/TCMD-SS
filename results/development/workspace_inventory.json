@@ -1,0 +1,471 @@
+{
+  "dataset_images": 64947,
+  "dataset_path": "data/raw/hirise_v3_2/map-proj-v3_2",
+  "notebooks_found_before_revision": [],
+  "files": [
+    {
+      "path": "src\\pipeline.py",
+      "bytes": 11356
+    },
+    {
+      "path": "src\\__init__.py",
+      "bytes": 1
+    },
+    {
+      "path": "src\\data\\corruptions.py",
+      "bytes": 4821
+    },
+    {
+      "path": "src\\data\\dataset.py",
+      "bytes": 1089
+    },
+    {
+      "path": "src\\data\\hirise.py",
+      "bytes": 4534
+    },
+    {
+      "path": "src\\data\\protocol.py",
+      "bytes": 4172
+    },
+    {
+      "path": "src\\data\\split.py",
+      "bytes": 5392
+    },
+    {
+      "path": "src\\data\\transforms.py",
+      "bytes": 282
+    },
+    {
+      "path": "src\\data\\__init__.py",
+      "bytes": 1
+    },
+    {
+      "path": "src\\diffusion\\model.py",
+      "bytes": 2267
+    },
+    {
+      "path": "src\\diffusion\\process.py",
+      "bytes": 3836
+    },
+    {
+      "path": "src\\diffusion\\train.py",
+      "bytes": 6234
+    },
+    {
+      "path": "src\\diffusion\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\evaluation\\explanations.py",
+      "bytes": 1940
+    },
+    {
+      "path": "src\\evaluation\\metrics.py",
+      "bytes": 1976
+    },
+    {
+      "path": "src\\evaluation\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\fusion\\calibration.py",
+      "bytes": 2229
+    },
+    {
+      "path": "src\\fusion\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\generative\\discrepancy.py",
+      "bytes": 4602
+    },
+    {
+      "path": "src\\generative\\freeze.py",
+      "bytes": 1561
+    },
+    {
+      "path": "src\\generative\\__init__.py",
+      "bytes": 83
+    },
+    {
+      "path": "src\\latent\\model.py",
+      "bytes": 1158
+    },
+    {
+      "path": "src\\latent\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\semantic\\features.py",
+      "bytes": 3397
+    },
+    {
+      "path": "src\\semantic\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\spectral\\features.py",
+      "bytes": 2216
+    },
+    {
+      "path": "src\\spectral\\__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "src\\utils\\config.py",
+      "bytes": 622
+    },
+    {
+      "path": "src\\utils\\seed.py",
+      "bytes": 334
+    },
+    {
+      "path": "src\\utils\\__init__.py",
+      "bytes": 1
+    },
+    {
+      "path": "scripts\\audit_dataset.py",
+      "bytes": 22441
+    },
+    {
+      "path": "scripts\\build_report.py",
+      "bytes": 14250
+    },
+    {
+      "path": "scripts\\build_semantic_memory.py",
+      "bytes": 461
+    },
+    {
+      "path": "scripts\\build_submission.py",
+      "bytes": 12396
+    },
+    {
+      "path": "scripts\\calibrate_scores.py",
+      "bytes": 462
+    },
+    {
+      "path": "scripts\\create_test_anomalies.py",
+      "bytes": 490
+    },
+    {
+      "path": "scripts\\create_unsupervised_split.py",
+      "bytes": 473
+    },
+    {
+      "path": "scripts\\evaluate_tcmdss.py",
+      "bytes": 460
+    },
+    {
+      "path": "scripts\\extract_dataset.py",
+      "bytes": 2521
+    },
+    {
+      "path": "scripts\\fit_normal_models.py",
+      "bytes": 457
+    },
+    {
+      "path": "scripts\\predict.py",
+      "bytes": 1694
+    },
+    {
+      "path": "scripts\\prepare_revision.py",
+      "bytes": 4010
+    },
+    {
+      "path": "scripts\\run_ablation.py",
+      "bytes": 479
+    },
+    {
+      "path": "scripts\\run_pipeline.py",
+      "bytes": 1770
+    },
+    {
+      "path": "scripts\\train_diffusion.py",
+      "bytes": 467
+    },
+    {
+      "path": "scripts\\validate_project.py",
+      "bytes": 4294
+    },
+    {
+      "path": "configs\\base.yaml",
+      "bytes": 315
+    },
+    {
+      "path": "configs\\full.yaml",
+      "bytes": 531
+    },
+    {
+      "path": "configs\\generative.yaml",
+      "bytes": 701
+    },
+    {
+      "path": "configs\\local.yaml",
+      "bytes": 558
+    },
+    {
+      "path": "configs\\smoke.yaml",
+      "bytes": 635
+    },
+    {
+      "path": "tests\\test_dataset.py",
+      "bytes": 7789
+    },
+    {
+      "path": "tests\\test_discrepancy.py",
+      "bytes": 1386
+    },
+    {
+      "path": "tests\\test_revision.py",
+      "bytes": 1781
+    },
+    {
+      "path": "tests\\test_tcmdss.py",
+      "bytes": 4426
+    },
+    {
+      "path": "data\\splits\\calibration_normal.csv",
+      "bytes": 1273846
+    },
+    {
+      "path": "data\\splits\\test_clean.csv",
+      "bytes": 863596
+    },
+    {
+      "path": "data\\splits\\train_normal.csv",
+      "bytes": 21945418
+    },
+    {
+      "path": "data\\splits\\generative\\calibration_a.csv",
+      "bytes": 761119
+    },
+    {
+      "path": "data\\splits\\generative\\calibration_b.csv",
+      "bytes": 513042
+    },
+    {
+      "path": "data\\splits\\generative\\development.csv",
+      "bytes": 825507
+    },
+    {
+      "path": "data\\splits\\generative\\final_holdout.csv",
+      "bytes": 38404
+    },
+    {
+      "path": "data\\splits\\generative\\train_normal.csv",
+      "bytes": 21945418
+    },
+    {
+      "path": "outputs\\ablation_results.csv",
+      "bytes": 1412
+    },
+    {
+      "path": "outputs\\base_image_groups.csv",
+      "bytes": 4219558
+    },
+    {
+      "path": "outputs\\class_distribution.csv",
+      "bytes": 675
+    },
+    {
+      "path": "outputs\\dataset_audit.csv",
+      "bytes": 42730558
+    },
+    {
+      "path": "outputs\\dataset_audit.json",
+      "bytes": 8772891
+    },
+    {
+      "path": "outputs\\download_verification.json",
+      "bytes": 457
+    },
+    {
+      "path": "outputs\\run_config.json",
+      "bytes": 707
+    },
+    {
+      "path": "outputs\\run_summary.json",
+      "bytes": 1359
+    },
+    {
+      "path": "outputs\\stage_timings.json",
+      "bytes": 289
+    },
+    {
+      "path": "outputs\\validation.json",
+      "bytes": 344
+    },
+    {
+      "path": "outputs\\benchmark\\manifest.csv",
+      "bytes": 878258
+    },
+    {
+      "path": "outputs\\calibration\\calibration.json",
+      "bytes": 2782
+    },
+    {
+      "path": "outputs\\calibration\\normal_scores.csv",
+      "bytes": 78960
+    },
+    {
+      "path": "outputs\\diffusion\\training_history.csv",
+      "bytes": 619
+    },
+    {
+      "path": "outputs\\diffusion\\training_manifest.csv",
+      "bytes": 497729
+    },
+    {
+      "path": "outputs\\diffusion\\training_summary.json",
+      "bytes": 376
+    },
+    {
+      "path": "outputs\\diffusion\\validation_manifest.csv",
+      "bytes": 55807
+    },
+    {
+      "path": "outputs\\evaluation\\by_family.csv",
+      "bytes": 1355
+    },
+    {
+      "path": "outputs\\evaluation\\by_severity.csv",
+      "bytes": 560
+    },
+    {
+      "path": "outputs\\evaluation\\metrics.json",
+      "bytes": 607
+    },
+    {
+      "path": "outputs\\evaluation\\normal_fpr_by_class.csv",
+      "bytes": 252
+    },
+    {
+      "path": "outputs\\evaluation\\predictions.csv",
+      "bytes": 1068449
+    },
+    {
+      "path": "outputs\\heatmaps\\explanations.json",
+      "bytes": 3573
+    },
+    {
+      "path": "outputs\\latent\\normal.pt",
+      "bytes": 216615
+    },
+    {
+      "path": "outputs\\semantic\\memory.pt",
+      "bytes": 33984157
+    },
+    {
+      "path": "outputs\\semantic\\metadata.json",
+      "bytes": 303
+    },
+    {
+      "path": "outputs\\smoke\\ablation_results.csv",
+      "bytes": 1251
+    },
+    {
+      "path": "outputs\\smoke\\run_config.json",
+      "bytes": 775
+    },
+    {
+      "path": "outputs\\smoke\\run_summary.json",
+      "bytes": 1388
+    },
+    {
+      "path": "outputs\\smoke\\stage_timings.json",
+      "bytes": 289
+    },
+    {
+      "path": "outputs\\spectral\\normal.pt",
+      "bytes": 2825
+    },
+    {
+      "path": "outputs\\splits\\protocol.json",
+      "bytes": 409
+    },
+    {
+      "path": "outputs\\smoke\\benchmark\\manifest.csv",
+      "bytes": 18587
+    },
+    {
+      "path": "outputs\\smoke\\calibration\\calibration.json",
+      "bytes": 2435
+    },
+    {
+      "path": "outputs\\smoke\\calibration\\normal_scores.csv",
+      "bytes": 5251
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\training_history.csv",
+      "bytes": 126
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\training_manifest.csv",
+      "bytes": 10582
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\training_summary.json",
+      "bytes": 364
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\validation_manifest.csv",
+      "bytes": 3016
+    },
+    {
+      "path": "outputs\\smoke\\evaluation\\by_family.csv",
+      "bytes": 794
+    },
+    {
+      "path": "outputs\\smoke\\evaluation\\by_severity.csv",
+      "bytes": 237
+    },
+    {
+      "path": "outputs\\smoke\\evaluation\\metrics.json",
+      "bytes": 584
+    },
+    {
+      "path": "outputs\\smoke\\evaluation\\normal_fpr_by_class.csv",
+      "bytes": 229
+    },
+    {
+      "path": "outputs\\smoke\\evaluation\\predictions.csv",
+      "bytes": 26133
+    },
+    {
+      "path": "outputs\\smoke\\heatmaps\\explanations.json",
+      "bytes": 3702
+    },
+    {
+      "path": "outputs\\smoke\\latent\\normal.pt",
+      "bytes": 23271
+    },
+    {
+      "path": "outputs\\smoke\\semantic\\memory.pt",
+      "bytes": 790365
+    },
+    {
+      "path": "outputs\\smoke\\semantic\\metadata.json",
+      "bytes": 400
+    },
+    {
+      "path": "outputs\\smoke\\spectral\\normal.pt",
+      "bytes": 2825
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\checkpoints\\best.pt",
+      "bytes": 516888
+    },
+    {
+      "path": "outputs\\smoke\\diffusion\\checkpoints\\last.pt",
+      "bytes": 516888
+    },
+    {
+      "path": "outputs\\diffusion\\checkpoints\\best.pt",
+      "bytes": 6958547
+    },
+    {
+      "path": "outputs\\diffusion\\checkpoints\\last.pt",
+      "bytes": 6958675
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "map_method": "mean of clean-A robust z with zero-MAD spread fallback; localized pixel/texture/profile maps",
+  "map_median": [
+    0.40912625193595886,
+    0.0,
+    0.04055117815732956
+  ],
+  "map_scale": [
+    0.49654579162597656,
+    0.5612460970878601,
+    0.04628882557153702
+  ],
+  "pixel_threshold": 2.1308751106262207,
+  "pixel_threshold_source": "independent clean calibration B; uniform spatial subsampling; q95",
+  "source_bootstrap": {
+    "variant": "complete_three_mean",
+    "sources": 12,
+    "replicates": 200,
+    "auroc_lower": 0.6868985902134773,
+    "auroc_upper": 0.7650617283950618
+  },
+  "limitations": [
+    "This is a three-channel development ablation without DINO",
+    "Full-image stripe masks have no background: pixel AUROC and ratio are undefined",
+    "Frequency profile maps are row/column attribution, not spatial inverse FFT",
+    "Geometric corruption masks, not manually annotated real faults",
+    "Small source count makes bootstrap intervals unstable"
+  ],
+  "final_evaluated": false
+}

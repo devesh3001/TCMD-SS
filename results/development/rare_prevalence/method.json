@@ -1,0 +1,8 @@
+{
+  "method": "Analytical class-prevalence reweighting of historical development conditional score distributions",
+  "reference": "VAD4Space, arXiv:2603.13993, evaluation setting with 5% anomalies",
+  "not_a_new_benchmark": true,
+  "thresholds_changed": false,
+  "external_data_used": false,
+  "limitation": "Assumes class-conditional score distributions remain unchanged; synthetic prevalence calculations are not deployment validation."
+}

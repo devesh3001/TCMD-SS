@@ -1,0 +1,44 @@
+[
+  {
+    "family": "dead_pixels",
+    "case_id": "esp_020133_1720_red-0022_dead_pixels_0.3",
+    "figure": "results\\figures\\generative_v7\\dead_pixels.png",
+    "score": 1.9632488489151,
+    "threshold": 0.6986505389213562
+  },
+  {
+    "family": "foreign_content",
+    "case_id": "esp_020133_1720_red-0022_foreign_content_0.3",
+    "figure": "results\\figures\\generative_v7\\foreign_content.png",
+    "score": -0.37439170479774475,
+    "threshold": 0.6986505389213562
+  },
+  {
+    "family": "local_blur",
+    "case_id": "esp_020133_1720_red-0022_local_blur_0.3",
+    "figure": "results\\figures\\generative_v7\\local_blur.png",
+    "score": -0.3181803226470947,
+    "threshold": 0.6986505389213562
+  },
+  {
+    "family": "missing_patch",
+    "case_id": "esp_020133_1720_red-0022_missing_patch_0.3",
+    "figure": "results\\figures\\generative_v7\\missing_patch.png",
+    "score": 0.46065554022789,
+    "threshold": 0.6986505389213562
+  },
+  {
+    "family": "patch_duplication",
+    "case_id": "esp_020133_1720_red-0022_patch_duplication_0.3",
+    "figure": "results\\figures\\generative_v7\\patch_duplication.png",
+    "score": -0.621272623538971,
+    "threshold": 0.6986505389213562
+  },
+  {
+    "family": "stripes",
+    "case_id": "esp_020133_1720_red-0022_stripes_0.3",
+    "figure": "results\\figures\\generative_v7\\stripes.png",
+    "score": 1.2142508029937744,
+    "threshold": 0.6986505389213562
+  }
+]

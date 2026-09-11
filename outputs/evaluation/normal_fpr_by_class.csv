@@ -1,0 +1,9 @@
+class_id,class_name,n,false_positives,false_positive_rate
+0,other,20,0,0.0
+1,crater,20,0,0.0
+2,dark dune,20,0,0.0
+3,slope streak,19,0,0.0
+4,bright dune,16,4,0.25
+5,impact ejecta,6,0,0.0
+6,swiss cheese,8,0,0.0
+7,spider,19,3,0.15789473684210525

@@ -1,0 +1,62 @@
+{
+  "status": "development_only",
+  "method": "localized generative residual / texture deficiency / narrowband observed-generated discrepancy",
+  "median": [
+    1.992992639541626,
+    2.626230478286743,
+    0.6899925470352173
+  ],
+  "scale": [
+    0.48917216062545776,
+    1.5985060930252075,
+    0.4412727952003479
+  ],
+  "normal_calibration_a": 64,
+  "normal_calibration_b": 64,
+  "best_diagnostic": {
+    "variant": "complete_three_mean",
+    "auroc": 0.7180989583333334,
+    "auprc": 0.9792051494496941,
+    "precision": 0.9848484848484849,
+    "recall": 0.4513888888888889,
+    "f1": 0.6190476190476191,
+    "fpr": 0.125,
+    "tpr": 0.4513888888888889,
+    "tp": 130,
+    "fp": 2,
+    "tn": 14,
+    "fn": 158,
+    "median_anomaly_score": 0.6001642048358917,
+    "paired_anomaly_gt_clean": 0.7430555555555556,
+    "paired_n": 288,
+    "n": 304,
+    "threshold": 0.6986505389213562
+  },
+  "complete_three_max": {
+    "variant": "complete_three_max",
+    "auroc": 0.7098524305555556,
+    "auprc": 0.979081207632879,
+    "precision": 0.984251968503937,
+    "recall": 0.4340277777777778,
+    "f1": 0.6024096385542169,
+    "fpr": 0.125,
+    "tpr": 0.4340277777777778,
+    "tp": 125,
+    "fp": 2,
+    "tn": 14,
+    "fn": 163,
+    "median_anomaly_score": 1.1607760190963745,
+    "paired_anomaly_gt_clean": 0.7048611111111112,
+    "paired_n": 288,
+    "n": 304,
+    "threshold": 1.4081463813781738
+  },
+  "threshold_procedure": "normal A robust statistics, normal B q95",
+  "new_inference": false,
+  "final_evaluated": false,
+  "limitations": [
+    "No DINO; same 16 development originals and cached two-seed reconstructions",
+    "Scores selected using development; not untouched evidence",
+    "Residual aggregation excludes four-pixel frame edge; edge faults may be missed"
+  ]
+}

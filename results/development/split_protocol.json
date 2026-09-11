@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "counts": {
+    "train_normal": {
+      "images": 39997,
+      "source_id": 158,
+      "base_id": 6829,
+      "group_id": 6808,
+      "split_group_id": 145
+    },
+    "calibration_a": {
+      "images": 1418,
+      "source_id": 22,
+      "base_id": 1418,
+      "group_id": 1401,
+      "split_group_id": 15
+    },
+    "calibration_b": {
+      "images": 959,
+      "source_id": 19,
+      "base_id": 959,
+      "group_id": 953,
+      "split_group_id": 16
+    },
+    "development": {
+      "images": 1538,
+      "source_id": 30,
+      "base_id": 1538,
+      "group_id": 1537,
+      "split_group_id": 29
+    },
+    "final_holdout": {
+      "images": 71,
+      "source_id": 3,
+      "base_id": 71,
+      "group_id": 71,
+      "split_group_id": 3
+    }
+  },
+  "overlap": 0,
+  "exposure_files": [
+    "outputs\\evaluation\\predictions.csv",
+    "outputs\\smoke\\evaluation\\predictions.csv"
+  ],
+  "audit_review_components_excluded": [
+    "08a35605c6339912",
+    "2e67892b2fafbac8",
+    "31100b5de543c9d2",
+    "5d6271983cbd2bc1",
+    "732e8f6b138b22d8",
+    "fe0b84faa2d8d629"
+  ],
+  "normal_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "final_evaluated": false,
+  "limitations": [
+    "Exposure history covers saved workspace predictions and audit review components only; externally evaluated image IDs were not supplied.",
+    "Final holdout has few observations and cannot support broad Mars generalization claims.",
+    "Calibration A/B are source-disjoint; previous baseline calibration remains development history."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "development_only",
+  "protocol": "Cached independent-expert baseline, NOT generative discrepancy",
+  "normal_calibration_a": 71,
+  "normal_calibration_b": 57,
+  "median": [
+    0.38557812571525574,
+    0.4725137948989868,
+    3.475879430770874,
+    5.136113253853381
+  ],
+  "scale": [
+    0.08283131040930748,
+    0.06371342203617096,
+    2.6769045109033582,
+    0.6798326412556082
+  ],
+  "threshold_procedure": "95th percentile on clean B after clean-A robust normalization",
+  "selection": "Highest development AUROC among 13 prespecified discrete ablations; selection bias applies",
+  "best_development": {
+    "variant": "DINO_spectral_mean",
+    "auroc": 0.9326985677083334,
+    "auprc": 0.9914471830660896,
+    "precision": 0.9677093844601413,
+    "recall": 0.9081439393939394,
+    "f1": 0.9369809477283831,
+    "fpr": 0.25,
+    "tpr": 0.9081439393939394,
+    "tp": 959,
+    "fp": 32,
+    "tn": 96,
+    "fn": 97,
+    "median_anomaly_score": 2.3009612584907835,
+    "paired_anomaly_gt_clean": 0.978219696969697,
+    "paired_n": 1056,
+    "n": 1184,
+    "threshold": 0.6124267766787462
+  },
+  "final_evaluated": false,
+  "limitations": [
+    "Historical 11 corruption kinds at .2/.5/.8, not the requested six-family .15/.30/.50 benchmark",
+    "Small clean A/B calibration samples; empirical q95 does not guarantee 5% out-of-source FPR",
+    "No new inference or training; no evidence for improved blur or copy-move generative discrepancy"
+  ],
+  "input_sha256": {
+    "outputs\\calibration\\normal_scores.csv": "62f004bfb24807277671769a5b72b705e44e769172772a790059f13d4b751934",
+    "outputs\\evaluation\\predictions.csv": "4e49647eb248fb004d2ca9b1da41c6a0313da1b9ed3b78948b3d75047bb8ecdc"
+  }
+}
