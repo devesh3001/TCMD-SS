@@ -199,9 +199,43 @@ if heatmap_dir.exists():
 else:
     pdf.body('(Heatmap images not yet generated or not found.)')
 
+# ── Historical Evaluation (HiRISE V7) ───────────────────────────────────────
+pdf.add_page()
+pdf.section('12. Historical Evaluation (HiRISE Synthetic Benchmark)')
+pdf.body('Prior to the NSSC evaluation, the model was evaluated on a synthetic HiRISE benchmark (288 deterministic corruptions: stripes, dead pixels, missing patches, pure local blur, patch duplication, foreign content). No anomaly was used to train the generator.')
+pdf.table_row(['Family', 'AUROC', 'TPR (Recall)', 'Paired anomaly > clean'], bold=True)
+pdf.table_row(['dead_pixels', '0.9961', '1.0000', '1.0000'])
+pdf.table_row(['foreign_content', '0.5938', '0.1875', '0.7917'])
+pdf.table_row(['local_blur', '0.5404', '0.1667', '0.5833'])
+pdf.table_row(['missing_patch', '0.7474', '0.2708', '0.8750'])
+pdf.table_row(['patch_duplication', '0.4740', '0.1042', '0.2083'])
+pdf.table_row(['stripes', '0.9570', '0.9792', '1.0000'])
+pdf.ln(3)
+pdf.body('The model was highly sensitive to stripes and dead pixels, but struggled with pure local blur and patch duplication. The NSSC real anomaly dataset provides a much clearer separation than these synthetic edge cases.')
+
+pdf.section('13. Localization and Normal-Only Map Calibration')
+pdf.table_row(['Family', 'Pixel AUROC', 'IoU at clean pixel q95'], bold=True)
+pdf.table_row(['dead_pixels', '0.8346', '0.4463'])
+pdf.table_row(['foreign_content', '0.5110', '0.0000'])
+pdf.table_row(['local_blur', '0.6772', '0.0539'])
+pdf.table_row(['missing_patch', '0.7458', '0.1037'])
+pdf.table_row(['patch_duplication', '0.5001', '0.0048'])
+pdf.table_row(['stripes', 'Not defined', '0.0597'])
+pdf.ln(3)
+
+pdf.section('14. Rare-Anomaly Sensitivity and Related Work')
+pdf.body('Historical method: Expected precision at 5% anomalies: 0.4653. False alerts per 1,000: 37.1.')
+pdf.body('Related work: Genilotti et al., VAD4Space: Visual Anomaly Detection for Planetary Surface Imagery, 2026. Its feature-based benchmarks are complementary references; the central model here remains a normal-only generator.')
+
+pdf.section('15. Requirements, Limitations and Reproducibility')
+pdf.bullet('Normal-only deep generative model: Trained diffusion checkpoint and normal manifests preserved.')
+pdf.bullet('Flag and explain anomalies: Saved heatmaps, scoring thresholds, and explanation panels.')
+pdf.bullet('Documented notebook: notebooks/TCMD_SS_NSSC.ipynb executes full end-to-end evaluation.')
+pdf.bullet('At least three model versions: Discussed in Model Evolution section (V1, V2, V3-Final).')
+
 # ── References ──────────────────────────────────────────────────────────────
 pdf.add_page()
-pdf.section('12. References')
+pdf.section('16. References')
 refs = [
     '1. HiRISE Anomaly Detection problem statement, pp. 1-3.',
     '2. NSSC 2026, IIT Kharagpur - Data Analytics event page.',
