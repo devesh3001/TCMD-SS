@@ -1,9 +1,0 @@
-class_id,class_name,image_count,original_image_count,augmented_image_count,base_landmark_count,supplied_train_unique_images,supplied_train_rows,supplied_val_unique_images,supplied_val_rows,supplied_test_unique_images,supplied_test_rows
-0,other,52722,8802,43920,8802,40019,40019,11221,11221,1482,1482
-1,crater,5024,794,4230,794,3598,4333,1337,1435,89,89
-2,dark dune,766,166,600,166,616,644,84,147,66,66
-3,slope streak,1575,267,1308,267,924,938,602,616,49,49
-4,bright dune,1654,250,1404,250,1561,1561,77,77,16,16
-5,impact ejecta,476,74,402,74,343,539,126,231,7,7
-6,swiss cheese,1834,298,1536,298,1281,1918,511,812,42,42
-7,spider,896,164,732,164,637,1106,217,420,42,42
