@@ -1,0 +1,27 @@
+seed: 42
+threads: 4
+size: 64
+output: outputs/smoke
+base_channels: 8
+batch_size: 4
+epochs: 1
+max_steps_per_epoch: 2
+learning_rate: 0.0003
+diffusion_steps: 100
+sampling_steps: 4
+patience: 8
+train_limit: 24
+validation_limit: 4
+calibration_limit: 8
+test_limit: 8
+anomaly_sources: 2
+severities:
+- 0.7
+memory_patches: 512
+latent_dimensions: 8
+dino_model: vit_small_patch16_224.dino
+dino_weights: outputs/semantic/weights/dino_small.safetensors
+fallback_reason: 'CPU resource budget: pretrained ImageNet DINO-small replaces satellite
+  DINO-large for local execution only.'
+bootstrap_repeats: 100
+provisional: true
